@@ -5,6 +5,7 @@ import PartnerLogos from "@/components/partner-logos";
 import ClientLogos from "@/components/client-logos";
 import Contact from "@/components/contact";
 import Footer from "@/components/footer";
+import Testimonials from "@/components/testimonials";
 
 export default function Home() {
   return (
@@ -12,10 +13,17 @@ export default function Home() {
       <Header />
       <main className="flex-1 w-full">
         <HeroBanner />
-        <Solutions />
+        <div className="container px-4 md:px-6">
+          <Solutions />
+        </div>
         <PartnerLogos />
         <ClientLogos />
-        <Contact />
+        <div className="container px-4 md:px-6">
+           <Testimonials />
+        </div>
+        <div className="container px-4 md:px-6">
+          <Contact />
+        </div>
       </main>
       <Footer />
     </div>
