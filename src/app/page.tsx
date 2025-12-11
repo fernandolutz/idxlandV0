@@ -13,17 +13,11 @@ export default function Home() {
       <Header />
       <main className="flex-1 w-full">
         <HeroBanner />
-        <div className="container px-4 md:px-6">
-          <Solutions />
-        </div>
+        <Solutions />
         <PartnerLogos />
         <ClientLogos />
-        <div className="container px-4 md:px-6">
-           <Testimonials />
-        </div>
-        <div className="container px-4 md:px-6">
-          <Contact />
-        </div>
+        <Testimonials />
+        <Contact />
       </main>
       <Footer />
     </div>

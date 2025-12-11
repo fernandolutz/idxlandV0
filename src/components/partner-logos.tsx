@@ -6,9 +6,9 @@ const partnerLogos = PlaceHolderImages.filter(img => img.id.startsWith('partner-
 
 export default function PartnerLogos() {
   return (
-    <section id="partners" className="w-full py-16 sm:py-24 bg-sky-50 text-gray-800">
+    <section id="partners" className="w-full py-16 sm:py-24 bg-sky-100/80">
       <div className="container px-4 md:px-6">
-        <div className="text-center">
+        <div className="text-center text-gray-800">
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl font-headline">
             Parceiros
           </h2>
@@ -16,7 +16,7 @@ export default function PartnerLogos() {
             Trabalhamos com as melhores marcas do mercado.
           </p>
         </div>
-        <div className="mt-16 grid grid-cols-2 gap-8 sm:grid-cols-4">
+        <div className="mt-16 grid grid-cols-2 gap-8 md:grid-cols-4">
           {partnerLogos.map((logo) => (
             <Link
               href="#"
