@@ -4,7 +4,7 @@ import { ChevronDown } from 'lucide-react';
 
 export default function HeroBanner() {
   return (
-    <section id="home" className="relative bg-primary text-primary-foreground py-20 md:py-32">
+    <section id="home" className="relative w-full text-primary-foreground py-20 md:py-32">
         <div 
             className="absolute inset-0 bg-cover bg-center"
             style={{ backgroundImage: "url('/images/patterns/hero-background.png')" }}
