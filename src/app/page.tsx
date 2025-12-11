@@ -12,12 +12,10 @@ export default function Home() {
       <Header />
       <main className="flex-1 w-full">
         <HeroBanner />
-        <div className="container">
-            <Solutions />
-            <PartnerLogos />
-            <ClientLogos />
-            <Contact />
-        </div>
+        <Solutions />
+        <PartnerLogos />
+        <ClientLogos />
+        <Contact />
       </main>
       <Footer />
     </div>

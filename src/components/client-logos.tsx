@@ -5,7 +5,7 @@ const clientLogos = PlaceHolderImages.filter(img => img.id.startsWith('client-')
 
 export default function ClientLogos() {
   return (
-    <section id="clients" className="py-16 sm:py-24 bg-sky-100 text-gray-800 -mx-4 sm:-mx-6 md:-mx-8 px-4 sm:px-6 md:px-8">
+    <section id="clients" className="py-16 sm:py-24 bg-sky-100 text-gray-800">
       <div className="container">
         <div className="text-center">
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl font-headline">
