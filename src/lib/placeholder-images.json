@@ -15,7 +15,7 @@
     {
       "id": "partner-3",
       "description": "Microsoft Partner logo",
-      "imageUrl": "/images/partners/microsoft.png",
+      "imageUrl": "/images/partners/microsoft.jpg",
       "imageHint": "company logo"
     },
     {
@@ -32,56 +32,68 @@
     },
     {
       "id": "partner-6",
-      "description": "Google Cloud Partner logo",
-      "imageUrl": "https://images.unsplash.com/photo-1562783912-21ad31ee2a83?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxjb21wYW55JTIwbG9nb3xlbnwwfHx8fDE3NjU0MjkwNDJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "description": "Lenovo Partner logo",
+      "imageUrl": "/images/partners/lenovo.png",
+      "imageHint": "company logo"
+    },
+    {
+      "id": "partner-7",
+      "description": "Ubiquiti Partner logo",
+      "imageUrl": "/images/partners/ubiquiti.png",
+      "imageHint": "company logo"
+    },
+    {
+      "id": "partner-8",
+      "description": "IBM Partner logo",
+      "imageUrl": "/images/partners/ibm.png",
       "imageHint": "company logo"
     },
     {
       "id": "client-1",
-      "description": "Global Net logo",
-      "imageUrl": "https://images.unsplash.com/photo-1619551734325-81aaf323686c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxjb21wYW55JTIwbG9nb3xlbnwwfHx8fDE3NjU0MjkwNDJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "description": "Agriaco logo",
+      "imageUrl": "/images/clients/agriaco.png",
       "imageHint": "company logo"
     },
     {
       "id": "client-2",
-      "description": "Pioneer Labs logo",
-      "imageUrl": "https://images.unsplash.com/photo-1622465911368-72162f8da3e2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxjb21wYW55JTIwbG9nb3xlbnwwfHx8fDE3NjU0MjkwNDJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "description": "BR logo",
+      "imageUrl": "/images/clients/br.png",
       "imageHint": "company logo"
     },
     {
       "id": "client-3",
-      "description": "Visionary Tech logo",
-      "imageUrl": "https://images.unsplash.com/photo-1687523327554-fa9f50423489?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxjb21wYW55JTIwbG9nb3xlbnwwfHx8fDE3NjU0MjkwNDJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "description": "Continental logo",
+      "imageUrl": "/images/clients/continental.png",
       "imageHint": "company logo"
     },
     {
       "id": "client-4",
-      "description": "Synergy Inc logo",
-      "imageUrl": "https://images.unsplash.com/photo-1549924231-f129b911e442?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxjb21wYW55JTIwbG9nb3xlbnwwfHx8fDE3NjU0MjkwNDJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "description": "Gsilos logo",
+      "imageUrl": "/images/clients/gsilos.png",
       "imageHint": "company logo"
     },
     {
       "id": "client-5",
-      "description": "Fusion Works logo",
-      "imageUrl": "https://images.unsplash.com/photo-1687523327554-fa9f50423489?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxjb21wYW55JTIwbG9nb3xlbnwwfHx8fDE3NjU0MjkwNDJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "description": "Plegge logo",
+      "imageUrl": "/images/clients/plegge.png",
       "imageHint": "company logo"
     },
     {
       "id": "client-6",
-      "description": "NextGen Enterprises logo",
-      "imageUrl": "https://images.unsplash.com/photo-1562705121-e624542c7b9b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8Y29tcGFueSUyMGxvZ298ZW58MHx8fHwxNzY1NDI5MDQyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "description": "Primaza logo",
+      "imageUrl": "/images/clients/primaza.png",
       "imageHint": "company logo"
     },
     {
       "id": "client-7",
-      "description": "Alpha Core logo",
-      "imageUrl": "https://images.unsplash.com/photo-1549924231-f129b911e442?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxjb21wYW55JTIwbG9nb3xlbnwwfHx8fDE3NjU0MjkwNDJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "description": "Silos logo",
+      "imageUrl": "/images/clients/silosc.png",
       "imageHint": "company logo"
     },
     {
       "id": "client-8",
-      "description": "Zenith Group logo",
-      "imageUrl": "https://images.unsplash.com/photo-1687523327554-fa9f50423489?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxjb21wYW55JTIwbG9nb3xlbnwwfHx8fDE3NjU0MjkwNDJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "description": "Urbnanes logo",
+      "imageUrl": "/images/clients/urbanes.png",
       "imageHint": "company logo"
     },
     {
