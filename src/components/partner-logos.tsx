@@ -21,7 +21,7 @@ export default function PartnerLogos() {
             <Link
               href="#"
               key={logo.id}
-              className="flex justify-center items-center p-4 rounded-lg transition-transform duration-300 hover:scale-105 hover:shadow-lg bg-background"
+              className="flex justify-center items-center p-4 rounded-lg transition-transform duration-300 hover:scale-105 hover:shadow-lg bg-white/5"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -30,7 +30,7 @@ export default function PartnerLogos() {
                 alt={logo.description}
                 width={150}
                 height={75}
-                className="object-contain"
+                className="object-contain mix-blend-screen p-2"
                 data-ai-hint={logo.imageHint}
               />
             </Link>

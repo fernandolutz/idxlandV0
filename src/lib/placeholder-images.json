@@ -8,26 +8,26 @@
     },
     {
       "id": "partner-2",
-      "description": "Microsoft Partner logo",
-      "imageUrl": "https://images.unsplash.com/photo-1619551734325-81aaf323686c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxjb21wYW55JTIwbG9nb3xlbnwwfHx8fDE3NjU0MjkwNDJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "description": "Dell Partner logo",
+      "imageUrl": "/images/partners/dell.png",
       "imageHint": "company logo"
     },
     {
       "id": "partner-3",
-      "description": "VMWare Partner logo",
-      "imageUrl": "https://images.unsplash.com/photo-1622465911368-72162f8da3e2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxjb21wYW55JTIwbG9nb3xlbnwwfHx8fDE3NjU0MjkwNDJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "description": "Microsoft Partner logo",
+      "imageUrl": "/images/partners/microsoft.png",
       "imageHint": "company logo"
     },
     {
       "id": "partner-4",
-      "description": "Acronis Partner logo",
-      "imageUrl": "https://images.unsplash.com/photo-1620288627223-53302f4e8c74?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxjb21wYW55JTIwbG9nb3xlbnwwfHx8fDE3NjU0MjkwNDJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "description": "Bitdefender Partner logo",
+      "imageUrl": "/images/partners/bitdefender.jpg",
       "imageHint": "company logo"
     },
     {
       "id": "partner-5",
-      "description": "Dell Partner logo",
-      "imageUrl": "https://images.unsplash.com/photo-1622465911368-72162f8da3e2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxjb21wYW55JTIwbG9nb3xlbnwwfHx8fDE3NjU0MjkwNDJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "description": "VEEAM Partner logo",
+      "imageUrl": "/images/partners/veeam.png",
       "imageHint": "company logo"
     },
     {
