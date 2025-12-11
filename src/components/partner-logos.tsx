@@ -30,7 +30,7 @@ export default function PartnerLogos() {
                 alt={logo.description}
                 width={150}
                 height={75}
-                className="object-contain p-2"
+                className="object-contain"
                 data-ai-hint={logo.imageHint}
               />
             </Link>
