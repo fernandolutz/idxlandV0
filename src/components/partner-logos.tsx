@@ -16,7 +16,7 @@ export default function PartnerLogos() {
             Trabalhamos com as melhores marcas do mercado.
           </p>
         </div>
-        <div className="mt-16 grid grid-cols-2 gap-4 md:grid-cols-4 lg:grid-cols-6">
+        <div className="mt-16 grid grid-cols-2 gap-4 md:grid-cols-4">
           {partnerLogos.map((logo) => (
             <Link
               href="#"
