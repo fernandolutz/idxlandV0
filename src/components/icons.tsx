@@ -4,15 +4,15 @@ export function IndexDigitalLogo(props: SVGProps<SVGSVGElement>) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 256 256"
+      viewBox="0 0 24 24"
       width="1em"
       height="1em"
       {...props}
     >
-      <g fill="currentColor">
-        <path d="M128 24a104 104 0 1 0 104 104A104.11 104.11 0 0 0 128 24Zm0 192a88 88 0 1 1 88-88a88.1 88.1 0 0 1-88 88Z" />
-        <path d="M136 80v96h-16V80Z" />
-      </g>
+      <path
+        d="M3 3h18v18H3V3zm2 2v14h14V5H5zm2 2h2v10H7V7zm4 0h2v10h-2V7zm4 0h2v10h-2V7z"
+        fill="currentColor"
+      />
     </svg>
   );
 }

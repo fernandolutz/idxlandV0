@@ -7,7 +7,7 @@ const partnerLogos = PlaceHolderImages.filter(img => img.id.startsWith('partner-
 
 export default function PartnerLogos() {
   return (
-    <section id="partners" className="py-16 sm:py-24 bg-card">
+    <section id="partners" className="py-16 sm:py-24 bg-background">
       <div className="container">
         <div className="text-center">
           <Handshake className="mx-auto h-12 w-12 text-primary" />
@@ -23,7 +23,7 @@ export default function PartnerLogos() {
             <Link
               href="#"
               key={logo.id}
-              className="flex justify-center items-center p-4 rounded-lg transition-transform duration-300 hover:scale-105 hover:shadow-lg bg-background"
+              className="flex justify-center items-center p-4 rounded-lg transition-transform duration-300 hover:scale-105 hover:shadow-lg bg-card"
               target="_blank"
               rel="noopener noreferrer"
             >

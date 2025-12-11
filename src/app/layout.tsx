@@ -3,8 +3,8 @@ import './globals.css';
 import { Toaster } from "@/components/ui/toaster"
 
 export const metadata: Metadata = {
-  title: 'Index Digital Showcase',
-  description: 'Welcome to the Index Digital Showcase',
+  title: 'Index TI',
+  description: 'Transformamos tecnologia em solução prática para o seu negócio',
 };
 
 export default function RootLayout({

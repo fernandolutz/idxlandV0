@@ -9,7 +9,7 @@ export default function Footer() {
         <div className="flex items-center gap-2">
           <IndexDigitalLogo className="h-6 w-6 text-primary" />
           <p className="text-sm text-muted-foreground">
-            &copy; {new Date().getFullYear()} Index Digital. Todos os direitos reservados.
+            &copy; {new Date().getFullYear()} IndexTI. Todos os direitos reservados.
           </p>
         </div>
         <div className="flex items-center gap-4">
