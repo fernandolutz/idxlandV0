@@ -6,7 +6,7 @@ const clientLogos = PlaceHolderImages.filter(img => img.id.startsWith('client-')
 
 export default function ClientLogos() {
   return (
-    <section id="clients" className="py-16 sm:py-24 bg-card">
+    <section id="clients" className="py-16 sm:py-24 bg-background">
       <div className="container">
         <div className="text-center">
           <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl font-headline">
@@ -20,7 +20,7 @@ export default function ClientLogos() {
           {clientLogos.map((logo) => (
             <div
               key={logo.id}
-              className="flex justify-center items-center p-4 rounded-lg transition-transform duration-300 hover:scale-105 hover:shadow-lg bg-background"
+              className="flex justify-center items-center p-4 rounded-lg transition-transform duration-300 hover:scale-105 hover:shadow-lg bg-card"
             >
               <Image
                 src={logo.imageUrl}
