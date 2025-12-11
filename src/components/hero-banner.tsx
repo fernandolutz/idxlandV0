@@ -6,8 +6,8 @@ export default function HeroBanner() {
   return (
     <section id="home" className="relative bg-primary text-primary-foreground py-20 md:py-32">
         <div 
-            className="absolute inset-0 bg-repeat"
-            style={{ backgroundImage: "url('/images/patterns/pattern.png')" }}
+            className="absolute inset-0 bg-cover bg-center"
+            style={{ backgroundImage: "url('/images/patterns/hero-background.png')" }}
         ></div>
         <div className="absolute inset-0 bg-primary/80"></div>
 
