@@ -36,7 +36,7 @@ const testimonialImages = PlaceHolderImages.filter(img => img.id.startsWith('tes
 export default function Testimonials() {
   return (
     <section id="testimonials" className="w-full py-16 sm:py-24">
-      <div className="container px-4 md:px-6">
+      <div className="container">
         <div className="bg-card rounded-lg p-10">
             <div className="text-center">
             <MessageSquare className="mx-auto h-12 w-12 text-primary" />

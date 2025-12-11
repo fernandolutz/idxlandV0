@@ -37,7 +37,7 @@ const solutions = [
 export default function Solutions() {
   return (
     <section id="solutions" className="w-full py-16 sm:py-24 bg-background">
-      <div className="container px-4 md:px-6">
+      <div className="container">
         <div className="text-center max-w-4xl mx-auto mb-16">
           <div className="relative inline-block">
               <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl font-headline relative z-10">
