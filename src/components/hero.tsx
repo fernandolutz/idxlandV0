@@ -44,14 +44,14 @@ const highlightsData = [
 ];
 
 
-export default function Hero() {
+export default function Solutions() {
   return (
-    <section id="home" className="py-16 sm:py-24 bg-background">
+    <section id="solutions" className="py-16 sm:py-24 bg-background">
       <div className="container">
-        <div className="text-center max-w-4xl mx-auto mb-16">
-          <p className="text-lg text-muted-foreground">
-            Desde 2019, ajudamos pequenas e médias empresas em todo o Brasil a fortalecer sua operação por meio de tecnologia confiável. Com mais de 100 clientes ativos, somos especialistas em infraestrutura, segurança, backup e gestão de TI.
-          </p>
+        <div className="text-center max-w-4xl mx-auto mb-12">
+           <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl font-headline">
+              Nossas Soluções
+           </h2>
           <p className="mt-4 text-lg text-muted-foreground">
             Oferecemos suporte completo para que sua empresa funcione com estabilidade, produtividade e segurança. Transformamos tecnologia em solução prática, organizando processos, prevenindo problemas e garantindo um ambiente preparado para crescer junto com o seu negócio.
           </p>
