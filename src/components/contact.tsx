@@ -17,7 +17,6 @@ import { Textarea } from '@/components/ui/textarea';
 import { useToast } from '@/hooks/use-toast';
 import { submitContactForm } from '@/app/actions';
 import { contactFormSchema, type ContactFormValues } from '@/app/schemas';
-import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
 
 export default function Contact() {
   const { toast } = useToast();
@@ -63,34 +62,34 @@ export default function Contact() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
           <div className="space-y-6">
-            <Card className="bg-card border-border/50">
-              <CardHeader className='flex-row items-center gap-4'>
-                <Mail className="h-8 w-8 text-primary" />
-                <CardTitle>Email</CardTitle>
-              </CardHeader>
-              <CardContent>
+            <div className="bg-card/50 border border-border/50 rounded-lg p-6 flex items-start gap-4 hover:border-primary transition-colors">
+              <div className="bg-primary/10 p-3 rounded-md">
+                <Mail className="h-6 w-6 text-primary" />
+              </div>
+              <div>
+                <h3 className="font-semibold text-foreground">Email</h3>
                 <p className="text-muted-foreground">comercial@indexti.com.br</p>
-              </CardContent>
-            </Card>
-              <Card className="bg-card border-border/50">
-              <CardHeader className='flex-row items-center gap-4'>
-                <Phone className="h-8 w-8 text-primary" />
-                <CardTitle>Telefone/WhatsApp</CardTitle>
-              </CardHeader>
-              <CardContent>
+              </div>
+            </div>
+             <div className="bg-card/50 border border-border/50 rounded-lg p-6 flex items-start gap-4 hover:border-primary transition-colors">
+              <div className="bg-primary/10 p-3 rounded-md">
+                <Phone className="h-6 w-6 text-primary" />
+              </div>
+              <div>
+                <h3 className="font-semibold text-foreground">Telefone/WhatsApp</h3>
                 <p className="text-muted-foreground">(51) 99999-9999</p>
-              </CardContent>
-            </Card>
-              <Card className="bg-card border-border/50">
-              <CardHeader className='flex-row items-center gap-4'>
-                <MapPin className="h-8 w-8 text-primary" />
-                <CardTitle>Localização</CardTitle>
-              </CardHeader>
-              <CardContent>
+              </div>
+            </div>
+             <div className="bg-card/50 border border-border/50 rounded-lg p-6 flex items-start gap-4 hover:border-primary transition-colors">
+              <div className="bg-primary/10 p-3 rounded-md">
+                <MapPin className="h-6 w-6 text-primary" />
+              </div>
+              <div>
+                <h3 className="font-semibold text-foreground">Localização</h3>
                 <p className="text-muted-foreground">Porto Alegre - RS, Brasil</p>
-                  <p className="text-sm text-muted-foreground">(Atendemos todo o Brasil)</p>
-              </CardContent>
-            </Card>
+                <p className="text-sm text-muted-foreground">(Atendemos todo o Brasil)</p>
+              </div>
+            </div>
           </div>
           <div className="bg-card p-8 rounded-lg shadow-lg">
             <Form {...form}>
