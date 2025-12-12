@@ -4,6 +4,7 @@ import Link from 'next/link';
 
 import { IndexDigitalLogo } from '@/components/icons';
 import MobileNav from './mobile-nav';
+import { Button } from './ui/button';
 
 const navLinks = [
   { href: '#', label: 'Início' },
@@ -45,6 +46,11 @@ export default function Header() {
         </Link>
 
         <div className="flex flex-1 items-center justify-end space-x-2">
+           <Button asChild>
+                <Link href="https://indexti.on.spiceworks.com/portal" target="_blank">
+                    Abrir Chamado
+                </Link>
+            </Button>
         </div>
       </div>
     </header>
