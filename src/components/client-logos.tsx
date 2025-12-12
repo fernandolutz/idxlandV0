@@ -33,7 +33,10 @@ export default function ClientLogos() {
               className="flex-shrink-0 flex justify-center items-center mx-8"
               style={{ height: '6rem' }} 
             >
-              <div className="relative h-full w-48">
+              <div className={cn(
+                  "relative h-full w-48",
+                  logo.id === 'client-3' && 'scale-150'
+                )}>
                 <Image
                   src={logo.imageUrl}
                   alt={logo.description}
