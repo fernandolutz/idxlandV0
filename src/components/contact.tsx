@@ -18,6 +18,7 @@ import { useToast } from '@/hooks/use-toast';
 import { submitContactForm } from '@/app/actions';
 import { contactFormSchema, type ContactFormValues } from '@/app/schemas';
 import { WhatsAppIcon } from './icons';
+import Link from 'next/link';
 
 export default function Contact() {
   const { toast } = useToast();
@@ -72,15 +73,17 @@ export default function Contact() {
                 <p className="text-muted-foreground">comercial@indexti.com.br</p>
               </div>
             </div>
-             <div className="bg-transparent border border-green-500/50 rounded-lg p-6 flex items-start gap-4 hover:bg-green-500/10 hover:border-green-500 transition-colors group">
-              <div className="bg-green-500/10 p-3 rounded-md">
-                <WhatsAppIcon className="h-6 w-6 text-green-500" />
+             <Link href="https://wa.me/5551999999999" target="_blank" rel="noopener noreferrer" className="block">
+              <div className="bg-transparent border border-green-500/50 rounded-lg p-6 flex items-start gap-4 hover:bg-green-500/10 hover:border-green-500 transition-colors group h-full">
+                <div className="bg-green-500/10 p-3 rounded-md">
+                  <WhatsAppIcon className="h-6 w-6 text-green-500" />
+                </div>
+                <div>
+                  <h3 className="font-semibold text-foreground group-hover:text-green-400 transition-colors">WhatsApp</h3>
+                  <p className="text-muted-foreground">O melhor jeito de falar conosco</p>
+                </div>
               </div>
-              <div>
-                <h3 className="font-semibold text-foreground group-hover:text-green-400 transition-colors">Telefone/WhatsApp</h3>
-                <p className="text-muted-foreground">(51) 99999-9999</p>
-              </div>
-            </div>
+            </Link>
              <div className="bg-card/50 border border-border/50 rounded-lg p-6 flex items-start gap-4 hover:border-primary transition-colors">
               <div className="bg-primary/10 p-3 rounded-md">
                 <MapPin className="h-6 w-6 text-primary" />
