@@ -25,9 +25,9 @@ const testimonials = [
   },
   {
     id: "testimonial-3",
-    name: "Emily White",
-    company: "Stellar Dynamics",
-    quote: "A atenção aos detalhes e a abordagem centrada no cliente da Index Digital são incomparáveis. Eles realmente entendem nossas necessidades e entregam soluções de alto impacto.",
+    name: "Lucas",
+    company: "Gerente, Urbanes Parques",
+    quote: "A IndexTI foi decisiva para estruturar nossa infraestrutura voltada a parques e serviços web, garantindo ambientes estáveis, seguros e preparados para alta demanda. Hoje contamos com sistemas mais performáticos, maior disponibilidade dos serviços online e uma operação muito mais confiável para nossos clientes. O suporte da equipe é ágil e sempre presente, trazendo a tranquilidade necessária para manter nossas plataformas no ar e funcionando sem interrupções.",
   },
 ];
 
