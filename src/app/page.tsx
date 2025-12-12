@@ -17,8 +17,8 @@ export default function Home() {
         <Solutions />
         <Stats />
         <PartnerLogos />
-        <ClientLogos />
         <Testimonials />
+        <ClientLogos />
         <Contact />
       </main>
       <Footer />
