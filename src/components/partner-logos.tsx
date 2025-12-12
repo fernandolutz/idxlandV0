@@ -8,7 +8,7 @@ export default function PartnerLogos() {
     const allLogos = [...partnerLogos, ...partnerLogos];
 
   return (
-    <section id="partners" className="w-full py-16 sm:py-24 bg-sky-100/80">
+    <section id="partners" className="w-full py-16 sm:py-24 bg-white">
       <div className="container">
         <div className="text-center text-gray-800">
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl font-headline">
@@ -31,11 +31,12 @@ export default function PartnerLogos() {
             <Link
               href="#"
               key={`${logo.id}-${index}`}
-              className="group flex-shrink-0 flex justify-center items-center p-4 rounded-lg bg-white shadow-md mx-4 h-24 w-48 transition-transform duration-300 hover:scale-105"
+              className="flex-shrink-0 flex justify-center items-center mx-8 transition-transform duration-300 hover:scale-105"
+              style={{ height: '6rem' }} 
               target="_blank"
               rel="noopener noreferrer"
             >
-              <div className="relative w-full h-full">
+              <div className="relative h-full w-48">
                 <Image
                   src={logo.imageUrl}
                   alt={logo.description}

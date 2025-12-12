@@ -8,7 +8,7 @@ export default function ClientLogos() {
   const allLogos = [...clientLogos, ...clientLogos];
 
   return (
-    <section id="clients" className="w-full py-16 sm:py-24 bg-sky-200/70">
+    <section id="clients" className="w-full py-16 sm:py-24 bg-white">
       <div className="container">
         <div className="text-center text-gray-800">
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl font-headline">
@@ -30,9 +30,10 @@ export default function ClientLogos() {
           {allLogos.map((logo, index) => (
             <div
               key={`${logo.id}-${index}`}
-              className="group flex-shrink-0 flex justify-center items-center p-4 rounded-lg bg-white shadow-md mx-4 h-24 w-48"
+              className="flex-shrink-0 flex justify-center items-center mx-8"
+              style={{ height: '6rem' }} 
             >
-              <div className="relative w-full h-full">
+              <div className="relative h-full w-48">
                 <Image
                   src={logo.imageUrl}
                   alt={logo.description}
