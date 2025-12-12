@@ -52,7 +52,7 @@ export default function Contact() {
     }
   }
   
-  const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent('Rua Hermann Faulhaber, 90 - Sala F - Panambi - RS')}`;
+  const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent('Rua Hermann Faulhaber, 90 - Panambi - RS')}`;
 
   return (
     <section id="contact" className="w-full py-16 sm:py-24 bg-background">
@@ -94,7 +94,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h3 className="font-semibold text-foreground">Localização</h3>
-                  <p className="text-muted-foreground">Rua Hermann Faulhaber, 90 - Sala F - Panambi - RS</p>
+                  <p className="text-muted-foreground">Rua Hermann Faulhaber, 90 - Panambi - RS</p>
                   <p className="text-sm text-muted-foreground">(Atendemos todo o Brasil)</p>
                 </div>
               </div>
