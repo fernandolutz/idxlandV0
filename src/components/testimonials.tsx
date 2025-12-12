@@ -13,9 +13,9 @@ import { PlaceHolderImages } from "@/lib/placeholder-images";
 const testimonials = [
   {
     id: "testimonial-1",
-    name: "Jane Doe",
-    company: "Innovate Corp",
-    quote: "A Index Digital revolucionou nossa presença online. A expertise e o profissionalismo da equipe foram excepcionais do início ao fim. Resultados incríveis!",
+    name: "Fernando L.",
+    company: "Gerente de TI, Agri-Service",
+    quote: "A IndexTI nos ajudou a levar tecnologias de grandes empresas para a nossa realidade, trazendo mais confiabilidade e estabilidade para a infraestrutura. Hoje contamos com uma disponibilidade superior a 99% e temos a tranquilidade de saber que o ambiente está bem gerenciado. O atendimento da equipe é sempre pontual, rápido e eficiente, o que faz da IndexTI um parceiro essencial para o nosso negócio.",
   },
   {
     id: "testimonial-2",
