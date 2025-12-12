@@ -13,8 +13,8 @@ import { PlaceHolderImages } from "@/lib/placeholder-images";
 const testimonials = [
   {
     id: "testimonial-1",
-    name: "Fernando L.",
-    company: "Gerente de TI, Agri-Service",
+    name: "Guilherme Pohl",
+    company: "Gerente Financeiro, GSilos",
     quote: "A IndexTI nos ajudou a levar tecnologias de grandes empresas para a nossa realidade, trazendo mais confiabilidade e estabilidade para a infraestrutura. Hoje contamos com uma disponibilidade superior a 99% e temos a tranquilidade de saber que o ambiente está bem gerenciado. O atendimento da equipe é sempre pontual, rápido e eficiente, o que faz da IndexTI um parceiro essencial para o nosso negócio.",
   },
   {
