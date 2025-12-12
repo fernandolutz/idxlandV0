@@ -2,7 +2,7 @@
 
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useForm } from 'react-hook-form';
-import { Mail, Phone, MapPin, Loader2 } from 'lucide-react';
+import { Mail, MapPin, Loader2 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import {
   Form,
@@ -17,6 +17,7 @@ import { Textarea } from '@/components/ui/textarea';
 import { useToast } from '@/hooks/use-toast';
 import { submitContactForm } from '@/app/actions';
 import { contactFormSchema, type ContactFormValues } from '@/app/schemas';
+import { WhatsAppIcon } from './icons';
 
 export default function Contact() {
   const { toast } = useToast();
@@ -71,12 +72,12 @@ export default function Contact() {
                 <p className="text-muted-foreground">comercial@indexti.com.br</p>
               </div>
             </div>
-             <div className="bg-card/50 border border-border/50 rounded-lg p-6 flex items-start gap-4 hover:border-primary transition-colors">
-              <div className="bg-primary/10 p-3 rounded-md">
-                <Phone className="h-6 w-6 text-primary" />
+             <div className="bg-transparent border border-green-500/50 rounded-lg p-6 flex items-start gap-4 hover:bg-green-500/10 hover:border-green-500 transition-colors group">
+              <div className="bg-green-500/10 p-3 rounded-md">
+                <WhatsAppIcon className="h-6 w-6 text-green-500" />
               </div>
               <div>
-                <h3 className="font-semibold text-foreground">Telefone/WhatsApp</h3>
+                <h3 className="font-semibold text-foreground group-hover:text-green-400 transition-colors">Telefone/WhatsApp</h3>
                 <p className="text-muted-foreground">(51) 99999-9999</p>
               </div>
             </div>
