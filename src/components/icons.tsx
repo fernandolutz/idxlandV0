@@ -4,14 +4,62 @@ export function IndexDigitalLogo(props: SVGProps<SVGSVGElement>) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 160 90"
+      viewBox="0 0 200 130"
       width="1em"
       height="1em"
       {...props}
     >
       <g fill="currentColor">
-        <path d="M65.3,1.6h-4.7v3.2h-3.2v3.2H54.2v3.2H51v3.2h-3.2v4.7H44.6v3.2h-3.2v3.2h-3.2v3.2h-3.2v3.2h3.2v3.2h3.2v3.2h3.2v3.2h3.2v4.7h4.7v3.2h3.2v3.2h3.2v3.2h3.2V51h3.2v-3.2h3.2v-3.2h3.2v-3.2h3.2V36h4.7v-3.2h3.2v-3.2h3.2V26h3.2v-3.2h-3.2v-3.2h-3.2v-3.2h-3.2v-3.2h-3.2v-4.7h-4.7v-3.2h-3.2V4.8h-3.2V1.6Zm-1.5,6.4h1.5v1.6h1.6v1.6h1.6v1.6h1.6v1.6h-1.6v-1.6h-1.6v-1.6h-1.6V8Zm-19.1,0h1.5v1.6h1.6v1.6h1.6v1.6h1.6v1.6h-1.6v-1.6h-1.6v-1.6h-1.6V8Zm-6.4,19.1h1.6v-1.5h1.6v-1.6h1.6v-1.6h1.6v-1.6h-1.6v1.6h-1.6v1.6h-1.6v1.6h-1.6v1.6Zm0,19.1h1.6v-1.5h1.6v-1.6h1.6v-1.6h1.6v-1.6h-1.6v1.6h-1.6v1.6h-1.6v1.6h-1.6v1.6Zm25.5,12.7h-1.5v-1.6h-1.6v-1.6h-1.6v-1.6h-1.6v-1.6h1.6v1.6h1.6v1.6h1.6v1.6h1.6v1.6ZM80,27.1h-1.6v1.5h-1.6v1.6h-1.6v1.6h-1.6v1.6h1.6v-1.6h1.6v-1.6h1.6v-1.6h1.6v-1.6ZM51,20.7h25.5v19.1H51V20.7Zm22.3,15.9V23.9H54.2v12.7h19.1Z" />
-        <text x="20" y="75" fontFamily="sans-serif" fontSize="20" fontWeight="bold">Index TI</text>
+        {/* Chip Icon */}
+        <path d="M75,10 h50 v5 h-50 z" /> 
+        <path d="M75,65 h50 v5 h-50 z" /> 
+        <path d="M70,15 h5 v50 h-5 z" />
+        <path d="M125,15 h5 v50 h-5 z" />
+        <rect x="80" y="20" width="40" height="40" stroke="currentColor" strokeWidth="2" fill="none" />
+        <rect x="92.5" y="32.5" width="15" height="15" stroke="currentColor" strokeWidth="2" fill="none" />
+        
+        {/* Chip Legs */}
+        <path d="M82,10 v-5 h5 v5 z" />
+        <path d="M92,10 v-5 h5 v5 z" />
+        <path d="M102,10 v-5 h5 v5 z" />
+        <path d="M112,10 v-5 h5 v5 z" />
+
+        <path d="M82,70 v5 h5 v-5 z" />
+        <path d="M92,70 v5 h5 v-5 z" />
+        <path d="M102,70 v5 h5 v-5 z" />
+        <path d="M112,70 v5 h5 v-5 z" />
+        
+        <path d="M70,22 h-5 v5 h5 z" />
+        <path d="M70,32 h-5 v5 h5 z" />
+        <path d="M70,42 h-5 v5 h5 z" />
+        <path d="M70,52 h-5 v5 h5 z" />
+
+        <path d="M130,22 h5 v5 h-5 z" />
+        <path d="M130,32 h5 v5 h-5 z" />
+        <path d="M130,42 h5 v5 h-5 z" />
+        <path d="M130,52 h5 v5 h-5 z" />
+        
+        {/* Text */}
+        <text
+          x="100"
+          y="105"
+          fontFamily="sans-serif"
+          fontSize="32"
+          fontWeight="bold"
+          textAnchor="middle"
+        >
+          Index TI
+        </text>
+        <text
+          x="100"
+          y="125"
+          fontFamily="sans-serif"
+          fontSize="10"
+          letterSpacing="1.5"
+          textAnchor="middle"
+        >
+          SOLUÇÕES TECNOLÓGICAS
+        </text>
       </g>
     </svg>
   );

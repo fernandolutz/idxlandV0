@@ -31,7 +31,7 @@ export default function HeroBanner() {
             </div>
           </div>
           <div className="hidden md:flex md:w-1/2 justify-center items-center relative mt-12 md:mt-0">
-            <div className="relative w-72 h-72 text-white">
+            <div className="relative w-96 h-96 text-white">
                 <div 
                     className="absolute inset-0 bg-white/20 rounded-full blur-3xl"
                     style={{ filter: 'blur(80px)' }}
