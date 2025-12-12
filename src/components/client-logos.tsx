@@ -10,7 +10,7 @@ export default function ClientLogos() {
       <div className="container">
         <div className="text-center text-gray-800">
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl font-headline">
-            Alguns Clientes
+            Alguns Clentes
           </h2>
           <p className="mt-4 text-lg text-gray-600">
             Empresas que confiam em nossos serviços
@@ -20,11 +20,10 @@ export default function ClientLogos() {
           {clientLogos.map((logo) => (
             <div
               key={logo.id}
-              className="group flex justify-center items-center p-4 rounded-lg transition-all duration-300 bg-white shadow-md hover:shadow-xl hover:scale-105"
+              className="group flex justify-center items-center p-4 rounded-lg transition-all duration-300 bg-white shadow-md hover:shadow-xl hover:scale-105 h-32"
             >
                <div className={cn(
-                  "relative w-full h-16",
-                  logo.id === 'client-3' && 'h-24'
+                  "relative w-full h-full",
                 )}>
                 <Image
                   src={logo.imageUrl}
