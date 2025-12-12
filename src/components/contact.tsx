@@ -15,7 +15,6 @@ import {
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { useToast } from '@/hooks/use-toast';
-import { submitContactForm } from '@/app/actions';
 import { contactFormSchema, type ContactFormValues } from '@/app/schemas';
 import { WhatsAppIcon } from './icons';
 import Link from 'next/link';
@@ -35,24 +34,18 @@ export default function Contact() {
   const { formState } = form;
 
   async function onSubmit(values: ContactFormValues) {
-    const result = await submitContactForm(values);
-
-    if (result.success) {
-      toast({
-        title: 'Mensagem Enviada!',
-        description: 'Obrigado por entrar em contato. Retornaremos em breve.',
-      });
-      form.reset();
-    } else {
-      toast({
-        variant: 'destructive',
-        title: 'Falha no Envio',
-        description: result.error || 'Ocorreu um erro. Por favor, tente novamente.',
-      });
-    }
+    // Since this is a static site, we can't process the form on the server.
+    // We'll show a confirmation to the user.
+    // For a real submission, you would typically use a third-party service.
+    console.log('Form values:', values);
+    
+    toast({
+      title: 'Funcionalidade em Demonstração',
+      description: 'Em um site real, esta mensagem seria enviada.',
+    });
   }
   
-  const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent('Rua Hermann Faulhaber, 90, Sala F - Panambi -RS, Brasil')}`;
+  const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent('Rua Hermann Faulhaber, 90, Panambi -RS, Brasil')}`;
 
   return (
     <section id="contact" className="w-full py-16 sm:py-24 bg-background">
@@ -180,7 +173,7 @@ export default function Contact() {
                     )}
                   </Button>
                   <p className="mt-4 text-center text-xs text-muted-foreground">
-                    Ao enviar este formulário, você concorda com nossa política de privacidade.
+                    O envio de formulários está desabilitado nesta demonstração.
                   </p>
                 </div>
               </form>
