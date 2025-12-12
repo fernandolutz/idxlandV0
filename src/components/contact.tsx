@@ -52,7 +52,7 @@ export default function Contact() {
     }
   }
   
-  const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent('Rua Hermann Faulhaber, 90, Sala F - Panambi -RS, Brasil')}`;
+  const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent('Rua Hermann Faulhaber, 90 - Panambi/RS')}`;
 
   return (
     <section id="contact" className="w-full py-16 sm:py-24 bg-background">
