@@ -19,9 +19,9 @@ export default function ClientLogos() {
           {clientLogos.map((logo) => (
             <div
               key={logo.id}
-              className="group flex justify-center items-center p-2 rounded-lg transition-all duration-300 bg-white shadow-md hover:shadow-xl hover:scale-105"
+              className="group flex justify-center items-center p-4 rounded-lg transition-all duration-300 bg-white shadow-md hover:shadow-xl hover:scale-105"
             >
-               <div className="relative w-full h-20">
+               <div className="relative w-full h-16">
                 <Image
                   src={logo.imageUrl}
                   alt={logo.description}
