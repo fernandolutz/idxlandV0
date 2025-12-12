@@ -60,7 +60,7 @@ export default function Contact() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
           <div className="space-y-6">
-            <Link href="https://wa.me/5551999999999" target="_blank" rel="noopener noreferrer" className="block">
+            <Link href="https://wa.me/5555981092211" target="_blank" rel="noopener noreferrer" className="block">
               <div className="bg-transparent border border-green-500/50 rounded-lg p-6 flex items-start gap-4 hover:bg-green-500/10 hover:border-green-500 transition-colors group h-full">
                 <div className="bg-green-500/10 p-3 rounded-md">
                   <WhatsAppIcon className="h-6 w-6 text-green-500" />
