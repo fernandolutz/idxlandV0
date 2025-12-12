@@ -1,5 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Server, Shield, Cloud, Wrench, Clock, DatabaseBackup } from "lucide-react";
+import AnimateOnScroll from "./animate-on-scroll";
 
 const solutions = [
   {
@@ -54,18 +55,25 @@ export default function Solutions() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {solutions.map((solution, index) => (
-            <Card key={index} className="bg-card border-border/50 hover:border-primary transition-colors group relative overflow-hidden">
-                <div className="absolute top-0 left-0 h-1 w-0 bg-primary transition-all duration-300 group-hover:w-full"></div>
-              <CardHeader className="flex flex-row items-start gap-4 space-y-0 pt-6">
-                  <div className="p-3 rounded-md bg-primary/10 border border-primary/20">
-                    <solution.icon className="h-6 w-6 text-primary" />
-                  </div>
-                  <CardTitle className="text-lg font-semibold leading-snug pt-3">{solution.title}</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground">{solution.description}</p>
-              </CardContent>
-            </Card>
+            <AnimateOnScroll 
+              key={index} 
+              animation="slide-in-from-bottom" 
+              delay={index * 100}
+              className="h-full"
+            >
+              <Card className="bg-card border-border/50 hover:border-primary transition-colors group relative overflow-hidden h-full flex flex-col">
+                  <div className="absolute top-0 left-0 h-1 w-0 bg-primary transition-all duration-300 group-hover:w-full"></div>
+                <CardHeader className="flex flex-row items-start gap-4 space-y-0 pt-6">
+                    <div className="p-3 rounded-md bg-primary/10 border border-primary/20">
+                      <solution.icon className="h-6 w-6 text-primary" />
+                    </div>
+                    <CardTitle className="text-lg font-semibold leading-snug pt-3">{solution.title}</CardTitle>
+                </CardHeader>
+                <CardContent className="flex-grow">
+                  <p className="text-muted-foreground">{solution.description}</p>
+                </CardContent>
+              </Card>
+            </AnimateOnScroll>
           ))}
         </div>
       </div>

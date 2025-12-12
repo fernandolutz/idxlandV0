@@ -1,10 +1,10 @@
 'use client';
 
-import { useRef, useEffect, useState } from 'react';
+import { useRef, useEffect, useState, ReactNode } from 'react';
 import { cn } from '@/lib/utils';
 
 interface AnimateOnScrollProps {
-  children: React.ReactNode;
+  children: ReactNode;
   className?: string;
   animation?: 'fade-in' | 'slide-in-from-bottom' | 'slide-in-from-left' | 'slide-in-from-right';
   delay?: number;
@@ -40,13 +40,14 @@ export default function AnimateOnScroll({
       { threshold }
     );
 
-    if (ref.current) {
-      observer.observe(ref.current);
+    const currentRef = ref.current;
+    if (currentRef) {
+      observer.observe(currentRef);
     }
 
     return () => {
-      if (ref.current) {
-        observer.unobserve(ref.current);
+      if (currentRef) {
+        observer.unobserve(currentRef);
       }
     };
   }, [threshold, triggerOnce]);
