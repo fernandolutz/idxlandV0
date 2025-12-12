@@ -19,9 +19,9 @@ const testimonials = [
   },
   {
     id: "testimonial-2",
-    name: "John Smith",
-    company: "Quantum Solutions",
-    quote: "Trabalhar com a Index Digital foi um divisor de águas. Eles não apenas entregaram o que prometeram, mas superaram todas as nossas expectativas. Recomendo fortemente.",
+    name: "Helio Jr",
+    company: "Diretor, Construtora Continental de SP",
+    quote: "Com o apoio da IndexTI, conseguimos evoluir significativamente nossa infraestrutura de TI, melhorando não apenas a disponibilidade, mas também a segurança, o desempenho e a organização dos ambientes. Hoje temos processos mais estruturados, backups confiáveis e maior previsibilidade operacional. A equipe é sempre acessível, proativa e rápida no atendimento, o que nos dá a confiança de contar com um parceiro que realmente entende o nosso negócio.",
   },
   {
     id: "testimonial-3",
