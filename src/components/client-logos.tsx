@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
+import { cn } from "@/lib/utils";
 
 const clientLogos = PlaceHolderImages.filter(img => img.id.startsWith('client-'));
 
@@ -15,13 +16,16 @@ export default function ClientLogos() {
             Empresas que confiam em nossos serviços
           </p>
         </div>
-        <div className="mt-16 grid grid-cols-2 gap-8 sm:grid-cols-4">
+        <div className="mt-16 grid grid-cols-2 gap-8 sm:grid-cols-4 items-center">
           {clientLogos.map((logo) => (
             <div
               key={logo.id}
               className="group flex justify-center items-center p-4 rounded-lg transition-all duration-300 bg-white shadow-md hover:shadow-xl hover:scale-105"
             >
-               <div className="relative w-full h-16">
+               <div className={cn(
+                  "relative w-full h-16",
+                  logo.id === 'client-3' && 'h-24'
+                )}>
                 <Image
                   src={logo.imageUrl}
                   alt={logo.description}
