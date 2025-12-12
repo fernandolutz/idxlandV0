@@ -5,6 +5,8 @@ import { PlaceHolderImages } from "@/lib/placeholder-images";
 const partnerLogos = PlaceHolderImages.filter(img => img.id.startsWith('partner-'));
 
 export default function PartnerLogos() {
+    const allLogos = [...partnerLogos, ...partnerLogos];
+
   return (
     <section id="partners" className="w-full py-16 sm:py-24 bg-sky-100/80">
       <div className="container">
@@ -16,16 +18,24 @@ export default function PartnerLogos() {
             Trabalhamos com as melhores marcas do mercado.
           </p>
         </div>
-        <div className="mt-16 grid grid-cols-2 gap-8 md:grid-cols-4">
-          {partnerLogos.map((logo) => (
+      </div>
+      <div
+        className="relative mt-12 w-full overflow-hidden"
+        style={{
+          maskImage:
+            "linear-gradient(to right, transparent, black 10%, black 90%, transparent)",
+        }}
+      >
+        <div className="flex w-max animate-scroll">
+          {allLogos.map((logo, index) => (
             <Link
               href="#"
-              key={logo.id}
-              className="group flex justify-center items-center p-4 rounded-lg transition-all duration-300 bg-white shadow-md hover:shadow-xl hover:scale-105"
+              key={`${logo.id}-${index}`}
+              className="group flex-shrink-0 flex justify-center items-center p-4 rounded-lg bg-white shadow-md mx-4 h-24 w-48 transition-transform duration-300 hover:scale-105"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <div className="relative w-full h-16">
+              <div className="relative w-full h-full">
                 <Image
                   src={logo.imageUrl}
                   alt={logo.description}
