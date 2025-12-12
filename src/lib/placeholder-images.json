@@ -97,6 +97,48 @@
       "imageHint": "company logo"
     },
     {
+      "id": "client-9",
+      "description": "Nau logo",
+      "imageUrl": "/images/clients/logo_nau.png",
+      "imageHint": "company logo"
+    },
+    {
+      "id": "client-10",
+      "description": "Chicago logo",
+      "imageUrl": "/images/clients/logo_chicago_univer.png",
+      "imageHint": "company logo"
+    },
+    {
+      "id": "client-11",
+      "description": "Florida logo",
+      "imageUrl": "/images/clients/floridauniver.png",
+      "imageHint": "company logo"
+    },
+    {
+      "id": "client-12",
+      "description": "Boston logo",
+      "imageUrl": "/images/clients/bostonuniver.png",
+      "imageHint": "company logo"
+    },
+    {
+      "id": "client-13",
+      "description": "Parques logo",
+      "imageUrl": "/images/clients/urbanesparques.png",
+      "imageHint": "company logo"
+    },
+    {
+      "id": "client-14",
+      "description": "Campos logo",
+      "imageUrl": "/images/clients/campos.png",
+      "imageHint": "company logo"
+    },
+    {
+      "id": "client-15",
+      "description": "Aldeia logo",
+      "imageUrl": "/images/clients/aldeia.png",
+      "imageHint": "company logo"
+    },
+    {
       "id": "testimonial-1",
       "description": "Photo of Jane Doe",
       "imageUrl": "https://images.unsplash.com/photo-1540569014015-19a7be504e3a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxwZXJzb24lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjUzNDA5MTh8MA&ixlib=rb-4.1.0&q=80&w=1080",
