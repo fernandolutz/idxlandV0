@@ -51,6 +51,8 @@ export default function Contact() {
       });
     }
   }
+  
+  const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent('Rua Hermann Faulhaber, 90, Sala F - Panambi -RS, Brasil')}`;
 
   return (
     <section id="contact" className="w-full py-16 sm:py-24 bg-background">
@@ -85,16 +87,18 @@ export default function Contact() {
                 <p className="text-muted-foreground">comercial@indexti.com.br</p>
               </div>
             </div>
-             <div className="bg-card/50 border border-border/50 rounded-lg p-6 flex items-start gap-4 hover:border-primary transition-colors">
-              <div className="bg-primary/10 p-3 rounded-md">
-                <MapPin className="h-6 w-6 text-primary" />
+             <Link href={mapsUrl} target="_blank" rel="noopener noreferrer" className="block">
+              <div className="bg-card/50 border border-border/50 rounded-lg p-6 flex items-start gap-4 hover:border-primary transition-colors h-full">
+                <div className="bg-primary/10 p-3 rounded-md">
+                  <MapPin className="h-6 w-6 text-primary" />
+                </div>
+                <div>
+                  <h3 className="font-semibold text-foreground">Localização</h3>
+                  <p className="text-muted-foreground">Rua Hermann Faulhaber, 90 - Panambi/RS</p>
+                  <p className="text-sm text-muted-foreground">(Atendemos todo o Brasil)</p>
+                </div>
               </div>
-              <div>
-                <h3 className="font-semibold text-foreground">Localização</h3>
-                <p className="text-muted-foreground">Porto Alegre - RS, Brasil</p>
-                <p className="text-sm text-muted-foreground">(Atendemos todo o Brasil)</p>
-              </div>
-            </div>
+            </Link>
           </div>
           <div className="bg-card p-8 rounded-lg shadow-lg">
             <div className="mb-6">
