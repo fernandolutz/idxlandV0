@@ -5,6 +5,9 @@ import { Toaster } from "@/components/ui/toaster"
 export const metadata: Metadata = {
   title: 'Index TI',
   description: 'Transformamos tecnologia em solução prática para o seu negócio',
+  icons: {
+    icon: '/icon.png',
+  },
 };
 
 export default function RootLayout({
