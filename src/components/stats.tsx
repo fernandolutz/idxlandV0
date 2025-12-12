@@ -3,9 +3,9 @@
 import { useEffect, useRef, useState } from 'react';
 
 const stats = [
-  { value: 7, label: 'Anos de mercado', suffix: '+' },
-  { value: 4, label: 'GPTW', suffix: 'x' },
-  { value: 300, label: 'Clientes atendidos', suffix: '+' },
+  { value: 6, label: 'Anos de mercado', suffix: '+' },
+  { value: 30000, label: 'Usuários', suffix: '+' },
+  { value: 100, label: 'Clientes atendidos', suffix: '+' },
 ];
 
 const StatItem = ({
@@ -51,24 +51,35 @@ const StatItem = ({
       if (start === end) return;
 
       const duration = 1500;
-      const incrementTime = (duration / end);
+      // Adjust increment for larger numbers to avoid performance issues
+      const step = Math.max(1, Math.floor(end / (duration / 16)));
+
 
       const timer = setInterval(() => {
-        start += 1;
-        setCount(start);
-        if (start === end) {
+        start += step;
+        if (start >= end) {
+          setCount(end);
           clearInterval(timer);
+        } else {
+          setCount(start);
         }
-      }, incrementTime);
+      }, 16);
 
       return () => clearInterval(timer);
     }
   }, [value, isInView]);
 
+  const formatNumber = (num: number) => {
+    if (num >= 1000) {
+      return num.toLocaleString('pt-BR');
+    }
+    return num;
+  }
+
   return (
     <div ref={ref} className="text-center">
       <div className="text-5xl md:text-7xl font-bold text-white flex items-center justify-center">
-        <span>{count}</span>
+        <span>{formatNumber(count)}</span>
         <span className="text-primary">{suffix}</span>
       </div>
       <p className="text-sm md:text-base text-gray-300 mt-2">{label}</p>
