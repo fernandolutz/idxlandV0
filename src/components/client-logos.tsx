@@ -41,6 +41,7 @@ export default function ClientLogos() {
                   src={logo.imageUrl}
                   alt={logo.description}
                   fill
+                  sizes="192px"
                   className="object-contain"
                   data-ai-hint={logo.imageHint}
                 />
