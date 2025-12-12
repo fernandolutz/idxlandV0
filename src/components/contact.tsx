@@ -2,7 +2,7 @@
 
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useForm } from 'react-hook-form';
-import { Mail, MapPin, Loader2 } from 'lucide-react';
+import { Mail, MapPin, Loader2, Send } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import {
   Form,
@@ -27,6 +27,7 @@ export default function Contact() {
     defaultValues: {
       name: '',
       email: '',
+      company: '',
       message: '',
     },
   });
@@ -96,29 +97,48 @@ export default function Contact() {
             </div>
           </div>
           <div className="bg-card p-8 rounded-lg shadow-lg">
+            <div className="mb-6">
+              <h3 className="text-2xl font-bold text-foreground">Manda uma mensagem</h3>
+              <p className="text-muted-foreground">Fala o que você precisa. A gente entra em contato.</p>
+            </div>
             <Form {...form}>
               <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
-                <FormField
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                  <FormField
+                    control={form.control}
+                    name="name"
+                    render={({ field }) => (
+                      <FormItem>
+                        <FormLabel>Nome *</FormLabel>
+                        <FormControl>
+                          <Input placeholder="Seu nome" {...field} />
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
+                  <FormField
+                    control={form.control}
+                    name="email"
+                    render={({ field }) => (
+                      <FormItem>
+                        <FormLabel>Email *</FormLabel>
+                        <FormControl>
+                          <Input placeholder="your@email.com" {...field} />
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
+                </div>
+                 <FormField
                   control={form.control}
-                  name="name"
+                  name="company"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Nome Completo</FormLabel>
+                      <FormLabel>Empresa</FormLabel>
                       <FormControl>
-                        <Input placeholder="Seu nome" {...field} />
-                      </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
-                <FormField
-                  control={form.control}
-                  name="email"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormLabel>Email</FormLabel>
-                      <FormControl>
-                        <Input placeholder="seu.email@exemplo.com" {...field} />
+                        <Input placeholder="Nome da sua empresa" {...field} />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -129,10 +149,10 @@ export default function Contact() {
                   name="message"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Mensagem</FormLabel>
+                      <FormLabel>Mensagem *</FormLabel>
                       <FormControl>
                         <Textarea
-                          placeholder="Como podemos ajudar?"
+                          placeholder="Conte-nos sobre seu projeto, requisitos ou dúvidas..."
                           className="min-h-[120px]"
                           {...field}
                         />
@@ -141,16 +161,24 @@ export default function Contact() {
                     </FormItem>
                   )}
                 />
-                <Button type="submit" className="w-full" disabled={formState.isSubmitting}>
-                  {formState.isSubmitting ? (
-                    <>
-                      <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                      Enviando...
-                    </>
-                  ) : (
-                    'Enviar Mensagem'
-                  )}
-                </Button>
+                <div>
+                  <Button type="submit" className="w-full" disabled={formState.isSubmitting}>
+                    {formState.isSubmitting ? (
+                      <>
+                        <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                        Enviando...
+                      </>
+                    ) : (
+                      <>
+                        Enviar Mensagem
+                        <Send className="ml-2 h-4 w-4" />
+                      </>
+                    )}
+                  </Button>
+                  <p className="mt-4 text-center text-xs text-muted-foreground">
+                    Ao enviar este formulário, você concorda com nossa política de privacidade.
+                  </p>
+                </div>
               </form>
             </Form>
           </div>

@@ -12,11 +12,11 @@ export async function submitContactForm(data: unknown) {
     };
   }
   
-  const { name, email, message } = parsed.data;
+  const { name, email, company, message } = parsed.data;
 
   // Simulate sending an email or saving to DB
   console.log('New contact form submission:');
-  console.log({ name, email, message });
+  console.log({ name, email, company, message });
   
   await new Promise(resolve => setTimeout(resolve, 1500));
 
