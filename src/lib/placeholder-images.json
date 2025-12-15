@@ -139,6 +139,12 @@
       "imageHint": "company logo"
     },
     {
+      "id": "client-16",
+      "description": "Pepsico logo",
+      "imageUrl": "/images/clients/pepsico.png",
+      "imageHint": "company logo"
+    },
+    {
       "id": "testimonial-1",
       "description": "Foto de Guilherme Pohl",
       "imageUrl": "/images/testimonials/testimonial-1.jpg",
