@@ -172,9 +172,6 @@ export default function Contact() {
                       </>
                     )}
                   </Button>
-                  <p className="mt-4 text-center text-xs text-muted-foreground">
-                    O envio de formulários está desabilitado nesta demonstração.
-                  </p>
                 </div>
               </form>
             </Form>
